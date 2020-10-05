@@ -1,685 +1,49 @@
-mixed-port: 7890
-socks-port: 7891
+port: 12300
+socks-port: 12301
 allow-lan: true
+mode: Rule
 log-level: info
-external-controller: 127.0.0.1:9090
-experimental:
-  ignore-resolve-fail: true
-cfw-latency-timeout: 3000
-cfw-latency-url: http://www.gstatic.com/generate_204
-cfw-conn-break-strategy:
-  proxy: none
-  profile: true
-  mode: false
-cfw-proxies-order: default
-cfw-bypass-bak:
-  - qq.com
-  - music.163.com
-  - "*.music.126.net"
-  - localhost
-  - 127.*
-  - 10.*
-  - 172.16.*
-  - 172.17.*
-  - 172.18.*
-  - 172.19.*
-  - 172.20.*
-  - 172.21.*
-  - 172.22.*
-  - 172.23.*
-  - 172.24.*
-  - 172.25.*
-  - 172.26.*
-  - 172.27.*
-  - 172.28.*
-  - 172.29.*
-  - 172.30.*
-  - 172.31.*
-  - 192.168.*
-  - <local>
-cfw-bypass:
-  - "*.423down.com"
-  - "*.bokecc.com"
-  - "*.chaipip.com"
-  - "*.hrtsea.com"
-  - "*.kaikeba.com"
-  - "*.laomo.me"
-  - "*.mpyit.com"
-  - "*.cn"
-  - "*.中国"
-  - "*.公司"
-  - "*.网络"
-  - "*-cn*"
-  - "*360buy*"
-  - "*alicdn*"
-  - "*alimama*"
-  - "*alipay*"
-  - "*appzapp*"
-  - "*baidupcs*"
-  - "*bilibili*"
-  - "*ccgslb*"
-  - "*chinacache*"
-  - "*duobao*"
-  - "*duolingo*"
-  - "*jdpay*"
-  - "*moke*"
-  - "*qhimg*"
-  - "*vpimg*"
-  - "*xiami*"
-  - "*xiaomi*"
-  - "*.360.com"
-  - "*.360kuai.com"
-  - "*.360safe.com"
-  - "*.dhrest.com"
-  - "*.qhres.com"
-  - "*.qhstatic.com"
-  - "*.qhupdate.com"
-  - "*.so.com"
-  - "*.4399.com"
-  - "*.4399pk.com"
-  - "*.5054399.com"
-  - "*.img4399.com"
-  - "*.58.com"
-  - "*.1688.com"
-  - "*.aliapp.org"
-  - "*.alibaba.com"
-  - "*.alibabacloud.com"
-  - "*.alibabausercontent.com"
-  - "*.alicdn.com"
-  - "*.aliexpress.com"
-  - "*.aliimg.com"
-  - "*.alikunlun.com"
-  - "*.alipay.com"
-  - "*.alipayobjects.com"
-  - "*.alisoft.com"
-  - "*.aliyun.com"
-  - "*.aliyuncdn.com"
-  - "*.aliyuncs.com"
-  - "*.amap.com"
-  - "*.autonavi.com"
-  - "*.dingtalk.com"
-  - "*.ele.me"
-  - "*.hichina.com"
-  - "*.mmstat.com"
-  - "*.mxhichina.com"
-  - "*.soku.com"
-  - "*.taobao.com"
-  - "*.taobaocdn.com"
-  - "*.tbcache.com"
-  - "*.tbcdn.com"
-  - "*.tmall.com"
-  - "*.tmall.hk"
-  - "*.ucweb.com"
-  - "*.xiami.com"
-  - "*.xiami.net"
-  - "*.ykimg.com"
-  - "*.youku.com"
-  - "*.baidu.com"
-  - "*.baidubcr.com"
-  - "*.baidupcs.com"
-  - "*.baidustatic.com"
-  - "*.bcebos.com"
-  - "*.bdimg.com"
-  - "*.bdstatic.com"
-  - "*.bdurl.net"
-  - "*.hao123.com"
-  - "*.hao123img.com"
-  - "*.jomodns.com"
-  - "*.yunjiasu-cdn.net"
-  - "*.acg.tv"
-  - "*.acgvideo.com"
-  - "*.b23.tv"
-  - "*.biliapi.com"
-  - "*.biliapi.net"
-  - "*.biligame.com"
-  - "*.biligame.net"
-  - "*.bilivideo.com"
-  - "*.hdslb.com"
-  - "*.im9.com"
-  - "*.battle.net"
-  - "*.battlenet.com"
-  - "*.blizzard.com"
-  - "*.bytedance.com"
-  - "*.bytedance.net"
-  - "*.bytedns.net"
-  - "*.byteimg.com"
-  - "*.feiliao.com"
-  - "*.gifshow.com"
-  - "*.huoshan.com"
-  - "*.iesdouyin.com"
-  - "*.ixigua.com"
-  - "*.kspkg.com"
-  - "*.pstatp.com"
-  - "*.snssdk.com"
-  - "*.toutiao.com"
-  - "*.toutiao13.com"
-  - "*.toutiaocdn.com"
-  - "*.toutiaocdn.net"
-  - "*.toutiaocloud.com"
-  - "*.toutiaohao.com"
-  - "*.toutiaohao.net"
-  - "*.toutiaoimg.com"
-  - "*.toutiaopage.com"
-  - "*.wukong.com"
-  - "*.zijieimg.com"
-  - "*.zjbyte.com"
-  - "*.zjcdn.com"
-  - "*.cctv.com"
-  - "*.cctvpic.com"
-  - "*.livechina.com"
-  - "*.21cn.com"
-  - "*.didialift.com"
-  - "*.didiglobal.com"
-  - "*.udache.com"
-  - "*.douyu.com"
-  - "*.douyu.tv"
-  - "*.douyutv.com"
-  - "*.epicgames.com"
-  - "*.helpshift.com"
-  - "*.paragon.com"
-  - "*.unrealengine.com"
-  - "*.dbankcdn.com"
-  - "*.hc-cdn.com"
-  - "*.hicloud.com"
-  - "*.huawei.com"
-  - "*.huaweicloud.com"
-  - "*.huaweishop.net"
-  - "*.hwccpc.com"
-  - "*.vmall.com"
-  - "*.vmallres.com"
-  - "*.iflyink.com"
-  - "*.iflyrec.com"
-  - "*.iflytek.com"
-  - "*.71.am"
-  - "*.71edge.com"
-  - "*.iqiyi.com"
-  - "*.iqiyipic.com"
-  - "*.ppsimg.com"
-  - "*.qiyi.com"
-  - "*.qiyipic.com"
-  - "*.qy.net"
-  - "*.360buy.com"
-  - "*.360buyimg.com"
-  - "*.jcloudcs.com"
-  - "*.jd.com"
-  - "*.jd.hk"
-  - "*.jdcloud.com"
-  - "*.jdpay.com"
-  - "*.paipai.com"
-  - "*.iciba.com"
-  - "*.ksosoft.com"
-  - "*.ksyun.com"
-  - "*.kuaishou.com"
-  - "*.yximgs.com"
-  - "*.meitu.com"
-  - "*.meitudata.com"
-  - "*.meitustat.com"
-  - "*.meipai.com"
-  - "*.le.com"
-  - "*.lecloud.com"
-  - "*.letv.com"
-  - "*.letvcloud.com"
-  - "*.letvimg.com"
-  - "*.letvlive.com"
-  - "*.letvstore.com"
-  - "*.hitv.com"
-  - "*.hunantv.com"
-  - "*.mgtv.com"
-  - "*.duokan.com"
-  - "*.mi-img.com"
-  - "*.mi.com"
-  - "*.miui.com"
-  - "*.xiaomi.com"
-  - "*.xiaomi.net"
-  - "*.xiaomicp.com"
-  - "*.126.com"
-  - "*.126.net"
-  - "*.127.net"
-  - "*.163.com"
-  - "*.163yun.com"
-  - "*.lofter.com"
-  - "*.netease.com"
-  - "*.ydstatic.com"
-  - "*.youdao.com"
-  - "*.pplive.com"
-  - "*.pptv.com"
-  - "*.pinduoduo.com"
-  - "*.yangkeduo.com"
-  - "*.leju.com"
-  - "*.miaopai.com"
-  - "*.sina.com"
-  - "*.sinaapp.com"
-  - "*.sinaimg.com"
-  - "*.weibo.com"
-  - "*.weibocdn.com"
-  - "*.xiaoka.tv"
-  - "*.go2map.com"
-  - "*.sogo.com"
-  - "*.sogou.com"
-  - "*.sogoucdn.com"
-  - "*.sohu-inc.com"
-  - "*.sohu.com"
-  - "*.sohucs.com"
-  - "*.sohuno.com"
-  - "*.sohurdc.com"
-  - "*.v-56.com"
-  - "*.playstation.com"
-  - "*.playstation.net"
-  - "*.playstationnetwork.com"
-  - "*.sony.com"
-  - "*.sonyentertainmentnetwork.com"
-  - "*.amplitude.com"
-  - "*.firebaseio.com"
-  - "*.hockeyapp.net"
-  - "*.smartmailcloud.com"
-  - "*.csgo.wmsj.cn"
-  - "*.dl.steam.ksyna.com"
-  - "*.dota2.wmsj.cn"
-  - "*.st.dl.bscstorage.net"
-  - "*.st.dl.eccdnx.com"
-  - "*.st.dl.pinyuncloud.com"
-  - "*.steamcdn-a.akamaihd.net"
-  - "*.steamcontent.com"
-  - "*.steamgames.com"
-  - "*.steampowered.com.8686c.com"
-  - "*.steamstat.us"
-  - "*.steamstatic.com"
-  - "*.steamusercontent.com"
-  - "*.foxmail.com"
-  - "*.gtimg.com"
-  - "*.idqqimg.com"
-  - "*.igamecj.com"
-  - "*.myapp.com"
-  - "*.myqcloud.com"
-  - "*.qq.com"
-  - "*.qqmail.com"
-  - "*.qqurl.com"
-  - "*.smtcdns.com"
-  - "*.smtcdns.net"
-  - "*.soso.com"
-  - "*.tencent-cloud.net"
-  - "*.tencent.com"
-  - "*.tencentmind.com"
-  - "*.tenpay.com"
-  - "*.wechat.com"
-  - "*.weixin.com"
-  - "*.weiyun.com"
-  - "*.appsimg.com"
-  - "*.appvipshop.com"
-  - "*.vip.com"
-  - "*.vipstatic.com"
-  - "*.ximalaya.com"
-  - "*.xmcdn.com"
-  - "*.00cdn.com"
-  - "*.88cdn.com"
-  - "*.kanimg.com"
-  - "*.kankan.com"
-  - "*.p2cdn.com"
-  - "*.sandai.net"
-  - "*.thundercdn.com"
-  - "*.xunlei.com"
-  - "*.got001.com"
-  - "*.jstucdn.com"
-  - "*.rrys.tv"
-  - "*.rrys2020.com"
-  - "*.yyets.com"
-  - "*.zimuzu.io"
-  - "*.zimuzu.tv"
-  - "*.zmz001.com"
-  - "*.zmz002.com"
-  - "*.zmz003.com"
-  - "*.zmz004.com"
-  - "*.zmz2019.com"
-  - "*.zmzapi.com"
-  - "*.zmzapi.net"
-  - "*.zmzfile.com"
-  - "*announce*"
-  - "*torrent*"
-  - "*tracker*"
-  - "*.animetorrents.me"
-  - "*.awesome-hd.me"
-  - "*.beitai.pt"
-  - "*.bittorrent.com"
-  - "*.broadcasthe.net"
-  - "*.chdbits.co"
-  - "*.classix-unlimited.co.uk"
-  - "*.empornium.me"
-  - "*.gazellegames.net"
-  - "*.hd4fans.org"
-  - "*.hdchina.org"
-  - "*.hdhome.org"
-  - "*.hdsky.me"
-  - "*.hdtime.org"
-  - "*.hdzone.me"
-  - "*.icetorrent.org"
-  - "*.jpopsuki.eu"
-  - "*.keepfrds.com"
-  - "*.leaguehd.com"
-  - "*.m-team.cc"
-  - "*.madsrevolution.net"
-  - "*.msg.vg"
-  - "*.nanyangpt.com"
-  - "*.ncore.cc"
-  - "*.open.cd"
-  - "*.ourbits.club"
-  - "*.passthepopcorn.me"
-  - "*.privatehd.to"
-  - "*.pthome.net"
-  - "*.redacted.ch"
-  - "*.springsunday.net"
-  - "*.tjupt.org"
-  - "*.totheglory.im"
-  - "*.trontv.com"
-  - "*.teamviewer.com"
-  - "*.baomitu.com"
-  - "*.bootcss.com"
-  - "*.jiasule.com"
-  - "*.jsdelivr.net"
-  - "*.staticfile.org"
-  - "*.upaiyun.com"
-  - "*.10010.com"
-  - "*.115.com"
-  - "*.12306.com"
-  - "*.17173.com"
-  - "*.178.com"
-  - "*.17k.com"
-  - "*.360doc.com"
-  - "*.36kr.com"
-  - "*.3dmgame.com"
-  - "*.51cto.com"
-  - "*.51job.com"
-  - "*.51jobcdn.com"
-  - "*.56.com"
-  - "*.8686c.com"
-  - "*.abchina.com"
-  - "*.abercrombie.com"
-  - "*.acfun.tv"
-  - "*.air-matters.com"
-  - "*.air-matters.io"
-  - "*.aixifan.com"
-  - "*.algocasts.io"
-  - "*.babytree.com"
-  - "*.babytreeimg.com"
-  - "*.baicizhan.com"
-  - "*.baidupan.com"
-  - "*.baike.com"
-  - "*.biqudu.com"
-  - "*.biquge.com"
-  - "*.bitauto.com"
-  - "*.c-ctrip.com"
-  - "*.camera360.com"
-  - "*.cdnmama.com"
-  - "*.chaoxing.com"
-  - "*.che168.com"
-  - "*.chinacache.net"
-  - "*.chinaso.com"
-  - "*.chinaz.com"
-  - "*.chinaz.net"
-  - "*.chuimg.com"
-  - "*.cibntv.net"
-  - "*.clouddn.com"
-  - "*.cloudxns.net"
-  - "*.cn163.net"
-  - "*.cnbeta.com"
-  - "*.cnbetacdn.com"
-  - "*.cnblogs.com"
-  - "*.cnki.net"
-  - "*.cnmstl.net"
-  - "*.coolapk.com"
-  - "*.coolapkmarket.com"
-  - "*.csdn.net"
-  - "*.ctrip.com"
-  - "*.dangdang.com"
-  - "*.dfcfw.com"
-  - "*.dianping.com"
-  - "*.dilidili.wang"
-  - "*.douban.com"
-  - "*.doubanio.com"
-  - "*.dpfile.com"
-  - "*.duowan.com"
-  - "*.dxycdn.com"
-  - "*.dytt8.net"
-  - "*.easou.com"
-  - "*.eastday.com"
-  - "*.eastmoney.com"
-  - "*.ecitic.com"
-  - "*.ewqcxz.com"
-  - "*.fang.com"
-  - "*.fantasy.tv"
-  - "*.feng.com"
-  - "*.fengkongcloud.com"
-  - "*.fir.im"
-  - "*.frdic.com"
-  - "*.fresh-ideas.cc"
-  - "*.ganji.com"
-  - "*.ganjistatic1.com"
-  - "*.geetest.com"
-  - "*.geilicdn.com"
-  - "*.ghpym.com"
-  - "*.godic.net"
-  - "*.gravatar.com"
-  - "*.guazi.com"
-  - "*.gwdang.com"
-  - "*.gzlzfm.com"
-  - "*.haibian.com"
-  - "*.haosou.com"
-  - "*.hollisterco.com"
-  - "*.hongxiu.com"
-  - "*.huajiao.com"
-  - "*.hupu.com"
-  - "*.huxiucdn.com"
-  - "*.huya.com"
-  - "*.ifeng.com"
-  - "*.ifengimg.com"
-  - "*.images-amazon.com"
-  - "*.infzm.com"
-  - "*.ipip.net"
-  - "*.it168.com"
-  - "*.ithome.com"
-  - "*.ixdzs.com"
-  - "*.jianguoyun.com"
-  - "*.jianshu.com"
-  - "*.jianshu.io"
-  - "*.jianshuapi.com"
-  - "*.jiathis.com"
-  - "*.jmstatic.com"
-  - "*.jumei.com"
-  - "*.kaola.com"
-  - "*.knewone.com"
-  - "*.koowo.com"
-  - "*.ksyungslb.com"
-  - "*.kuaidi100.com"
-  - "*.kugou.com"
-  - "*.lancdns.com"
-  - "*.landiannews.com"
-  - "*.lanzou.com"
-  - "*.lemicp.com"
-  - "*.letitfly.me"
-  - "*.linkedin.com"
-  - "*.lizhi.fm"
-  - "*.lizhi.io"
-  - "*.lizhifm.com"
-  - "*.loli.net"
-  - "*.luoo.net"
-  - "*.lvmama.com"
-  - "*.lxdns.com"
-  - "*.maoyan.com"
-  - "*.meilishuo.com"
-  - "*.meituan.com"
-  - "*.meituan.net"
-  - "*.meizu.com"
-  - "*.migucloud.com"
-  - "*.miguvideo.com"
-  - "*.mobike.com"
-  - "*.mogu.com"
-  - "*.mogucdn.com"
-  - "*.mogujie.com"
-  - "*.moji.com"
-  - "*.moke.com"
-  - "*.msstatic.com"
-  - "*.mubu.com"
-  - "*.myunlu.com"
-  - "*.nruan.com"
-  - "*.nuomi.com"
-  - "*.onedns.net"
-  - "*.onlinedown.net"
-  - "*.oracle.com"
-  - "*.oschina.net"
-  - "*.ourdvs.com"
-  - "*.overcast.fm"
-  - "*.paypal.com"
-  - "*.polyv.net"
-  - "*.qbox.me"
-  - "*.qcloud.com"
-  - "*.qcloudcdn.com"
-  - "*.qdaily.com"
-  - "*.qdmm.com"
-  - "*.qhimg.com"
-  - "*.qianqian.com"
-  - "*.qidian.com"
-  - "*.qihucdn.com"
-  - "*.qin.io"
-  - "*.qiniu.com"
-  - "*.qiniucdn.com"
-  - "*.qiniudn.com"
-  - "*.qiushibaike.com"
-  - "*.quanmin.tv"
-  - "*.qunar.com"
-  - "*.qunarzz.com"
-  - "*.rarbg.to"
-  - "*.repaik.com"
-  - "*.rrmj.tv"
-  - "*.ruguoapp.com"
-  - "*.runoob.com"
-  - "*.sankuai.com"
-  - "*.segmentfault.com"
-  - "*.sf-express.com"
-  - "*.shumilou.net"
-  - "*.simplecd.me"
-  - "*.sm.ms"
-  - "*.smzdm.com"
-  - "*.snwx.com"
-  - "*.soufunimg.com"
-  - "*.ssl-images-amazon.com"
-  - "*.sspai.com"
-  - "*.startssl.com"
-  - "*.suning.com"
-  - "*.taihe.com"
-  - "*.th-sjy.com"
-  - "*.tianqi.com"
-  - "*.tianqistatic.com"
-  - "*.tianyancha.com"
-  - "*.tianyaui.com"
-  - "*.tietuku.com"
-  - "*.tiexue.net"
-  - "*.tmiaoo.com"
-  - "*.trip.com"
-  - "*.ttmeiju.com"
-  - "*.tudou.com"
-  - "*.tuniu.com"
-  - "*.tuniucdn.com"
-  - "*.umengcloud.com"
-  - "*.upyun.com"
-  - "*.uxengine.net"
-  - "*.videocc.net"
-  - "*.vmware.com"
-  - "*.wandoujia.com"
-  - "*.weather.com"
-  - "*.weico.cc"
-  - "*.weidian.com"
-  - "*.weiphone.com"
-  - "*.weiphone.net"
-  - "*.womai.com"
-  - "*.wscdns.com"
-  - "*.xdrig.com"
-  - "*.xhscdn.com"
-  - "*.xiachufang.com"
-  - "*.xiaohongshu.com"
-  - "*.xiaojukeji.com"
-  - "*.xinhuanet.com"
-  - "*.xip.io"
-  - "*.xitek.com"
-  - "*.xiumi.us"
-  - "*.xslb.net"
-  - "*.xueqiu.com"
-  - "*.yach.me"
-  - "*.yeepay.com"
-  - "*.yhd.com"
-  - "*.yihaodianimg.com"
-  - "*.yinxiang.com"
-  - "*.yinyuetai.com"
-  - "*.yixia.com"
-  - "*.ys168.com"
-  - "*.yuewen.com"
-  - "*.yy.com"
-  - "*.yystatic.com"
-  - "*.zealer.com"
-  - "*.zhangzishi.cc"
-  - "*.zhanqi.tv"
-  - "*.zhaopin.com"
-  - "*.zhihu.com"
-  - "*.zhimg.com"
-  - "*.zhongsou.com"
-  - "*.zhuihd.com"
-  - localhost
-  - 127.*
-  - 10.*
-  - 172.16.*
-  - 172.17.*
-  - 172.18.*
-  - 172.19.*
-  - 172.20.*
-  - 172.21.*
-  - 172.22.*
-  - 172.23.*
-  - 172.24.*
-  - 172.25.*
-  - 172.26.*
-  - 172.27.*
-  - 172.28.*
-  - 172.29.*
-  - 172.30.*
-  - 172.31.*
-  - 192.168.*
-  - <local>
+external-controller: :9090
 proxies:
+  - {name: 🇯🇵 v2电信专线转日本, server: 52.v2zx3.poronode.xyz, port: 17898, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇺🇸 v2电信专线转美国, server: 34.v2zx4.poronode.xyz, port: 18898, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇰🇷 v2电信专线转韩国, server: 53.v2zx2.poronode.xyz, port: 15898, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
   - {name: 🇭🇰 v2电信专线转香港, server: 48.v2zx.poronode.xyz, port: 16898, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇭🇰 v2电信专线转香港2, server: 49.v2zx2.poronode.xyz, port: 16989, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇨🇳 V2移动中转台湾, server: 27.v2gzyd.poronode.xyz, port: 15989, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇸🇬 v2移动中转新加坡, server: 24.v2styd.poronode.xyz, port: 17889, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇸🇬 v2移动中转新加坡2, server: 28.v2styd.poronode.xyz, port: 16998, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇸🇬 v2移动中转新加坡3, server: 33.v2styd.poronode.xyz, port: 16899, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇯🇵 v2移动中转日本, server: 34.v2gzyd.poronode.xyz, port: 16124, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇨🇳 V2移动中转台湾, server: 27.v2yd3.poronode.xyz, port: 15989, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇨🇳 V2移动中转台湾2, server: 51.v2yd3.poronode.xyz, port: 17869, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇸🇬 v2移动中转新加坡, server: 24.v2yd2.poronode.xyz, port: 17889, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇸🇬 v2移动中转新加坡2, server: 28.v2yd2.poronode.xyz, port: 16998, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇸🇬 v2移动中转新加坡3, server: 33.v2yd2.poronode.xyz, port: 16899, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇯🇵 v2移动中转日本, server: 44.v2gzyd.poronode.xyz, port: 16128, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
   - {name: 🇯🇵 v2移动中转日本2, server: 35.v2gzyd.poronode.xyz, port: 16125, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
   - {name: 🇯🇵 v2移动中转日本3, server: 42.v2gzyd.poronode.xyz, port: 16127, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇯🇵 v2移动中转日本4, server: 44.v2gzyd.poronode.xyz, port: 16128, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇰🇷 v2移动中转韩国, server: 31.v2styd.poronode.xyz, port: 16889, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇰🇷 v2移动中转韩国2, server: 32.v2styd.poronode.xyz, port: 16898, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇰🇷 v2移动中转韩国, server: 31.v2yd2.poronode.xyz, port: 16889, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇰🇷 v2移动中转韩国2, server: 32.v2yd2.poronode.xyz, port: 16898, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇰🇷 v2移动中转韩国3, server: 49.v2yd2.poronode.xyz, port: 17989, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
   - {name: 🇭🇰 v2移动中转香港, server: 25.v2gzyd.poronode.xyz, port: 16997, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
   - {name: 🇭🇰 v2移动中转香港2, server: 41.v2gzyd.poronode.xyz, port: 16789, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇭🇰 v2移动中转香港3, server: 21.v2gzyd.poronode.xyz, port: 16899, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇭🇰 v2移动中转香港3, server: 12.v2gzyd.poronode.xyz, port: 16989, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
   - {name: 🇭🇰 v2移动中转香港4, server: 19.v2gzyd.poronode.xyz, port: 16126, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇭🇰 v2移动中转香港5, server: 12.v2gzyd.poronode.xyz, port: 16989, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇷🇺 v2联通中转俄罗斯, server: 15.v2ahlt.poronode.xyz, port: 16989, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇷🇺 v2联通中转俄罗斯2, server: 29.v2ahlt.poronode.xyz, port: 18989, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇷🇺 v2联通中转俄罗斯3, server: 30.v2ahlt.poronode.xyz, port: 17989, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇯🇵 v2联通中转日本, server: 46.v2ahlt.poronode.xyz, port: 17868, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇺🇲 v2联通中转美国, server: 16.v2ahlt.poronode.xyz, port: 16899, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇺🇲 v2联通中转美国2, server: 17.v2ahlt.poronode.xyz, port: 15988, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 普通试用节点线路, server: cs.porourl.com, port: 10024, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇷🇺 v2联通中转俄罗斯, server: 15.v2lt.poronode.xyz, port: 16989, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇷🇺 v2联通中转俄罗斯2, server: 29.v2lt.poronode.xyz, port: 18989, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇷🇺 v2联通中转俄罗斯3, server: 30.v2lt.poronode.xyz, port: 17989, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇯🇵 v2联通中转日本, server: 46.v2lt.poronode.xyz, port: 17868, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇺🇸 v2联通中转美国, server: 16.v2lt.poronode.xyz, port: 16899, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇺🇸 v2联通中转美国2, server: 17.v2lt.poronode.xyz, port: 15988, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 普通试用节点线路, server: cs.porourl.com, port: 46468, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
   - {name: 🇷🇺 移动中转俄罗斯, server: 14.v1yd2.poronode.xyz, port: 17402, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
   - {name: 🇷🇺 移动中转俄罗斯2, server: 26.v1yd2.poronode.xyz, port: 17403, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
   - {name: 🇷🇺 移动中转俄罗斯3, server: 38.v1yd2.poronode.xyz, port: 17401, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇸🇬 移动中转新加坡, server: 23.v1fjyd.poronode.xyz, port: 16689, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇸🇬 移动中转新加坡2, server: 22.v1fjyd.poronode.xyz, port: 16589, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇸🇬 移动中转新加坡3, server: 36.v1fjyd.poronode.xyz, port: 17699, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇺🇲 移动中转美国, server: 13.v1yd2.poronode.xyz, port: 17789, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇺🇲 移动中转美国2, server: 39.v1yd2.poronode.xyz, port: 17780, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇯🇵 联通中转日本, server: 20.v1hzlt.poronode.xyz, port: 17399, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇯🇵 联通中转日本2, server: 11.v1hzlt.poronode.xyz, port: 16649, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇯🇵 联通中转日本3, server: 45.v1hzlt.poronode.xyz, port: 16768, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇺🇲 联通中转美国, server: 37.v1hzlt.poronode.xyz, port: 16709, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
-  - {name: 🇺🇲 联通中转美国2, server: 43.v1hzlt.poronode.xyz, port: 16788, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇺🇸 移动中转美国, server: 13.v1yd2.poronode.xyz, port: 17789, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇺🇸 移动中转美国2, server: 39.v1yd2.poronode.xyz, port: 17780, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇺🇸 移动中转美国3, server: 37.v1yd2.poronode.xyz, port: 16709, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇺🇸 移动中转美国4, server: 43.v1yd2.poronode.xyz, port: 16788, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇸🇬 联通中转新加坡, server: 23.v1lt.poronode.xyz, port: 16689, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇸🇬 联通中转新加坡2, server: 22.v1lt.poronode.xyz, port: 16589, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇸🇬 联通中转新加坡3, server: 36.v1lt.poronode.xyz, port: 17699, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇯🇵 联通中转日本, server: 20.v1lt.poronode.xyz, port: 17399, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇯🇵 联通中转日本2, server: 11.v1lt.poronode.xyz, port: 16649, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
+  - {name: 🇯🇵 联通中转日本3, server: 45.v1lt.poronode.xyz, port: 16768, type: ssr, cipher: aes-256-cfb, password: k3U8z2ZGi78D, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 1192:6zcW8canGdaZ, obfsparam: 0a64d1192.microsoft.com, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -698,169 +62,177 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
+      - 🇯🇵 v2电信专线转日本
+      - 🇺🇸 v2电信专线转美国
+      - 🇰🇷 v2电信专线转韩国
       - 🇭🇰 v2电信专线转香港
-      - 🇭🇰 v2电信专线转香港2
       - 🇨🇳 V2移动中转台湾
+      - 🇨🇳 V2移动中转台湾2
       - 🇸🇬 v2移动中转新加坡
       - 🇸🇬 v2移动中转新加坡2
       - 🇸🇬 v2移动中转新加坡3
       - 🇯🇵 v2移动中转日本
       - 🇯🇵 v2移动中转日本2
       - 🇯🇵 v2移动中转日本3
-      - 🇯🇵 v2移动中转日本4
       - 🇰🇷 v2移动中转韩国
       - 🇰🇷 v2移动中转韩国2
+      - 🇰🇷 v2移动中转韩国3
       - 🇭🇰 v2移动中转香港
       - 🇭🇰 v2移动中转香港2
       - 🇭🇰 v2移动中转香港3
       - 🇭🇰 v2移动中转香港4
-      - 🇭🇰 v2移动中转香港5
       - 🇷🇺 v2联通中转俄罗斯
       - 🇷🇺 v2联通中转俄罗斯2
       - 🇷🇺 v2联通中转俄罗斯3
       - 🇯🇵 v2联通中转日本
-      - 🇺🇲 v2联通中转美国
-      - 🇺🇲 v2联通中转美国2
+      - 🇺🇸 v2联通中转美国
+      - 🇺🇸 v2联通中转美国2
       - 普通试用节点线路
       - 🇷🇺 移动中转俄罗斯
       - 🇷🇺 移动中转俄罗斯2
       - 🇷🇺 移动中转俄罗斯3
-      - 🇸🇬 移动中转新加坡
-      - 🇸🇬 移动中转新加坡2
-      - 🇸🇬 移动中转新加坡3
-      - 🇺🇲 移动中转美国
-      - 🇺🇲 移动中转美国2
+      - 🇺🇸 移动中转美国
+      - 🇺🇸 移动中转美国2
+      - 🇺🇸 移动中转美国3
+      - 🇺🇸 移动中转美国4
+      - 🇸🇬 联通中转新加坡
+      - 🇸🇬 联通中转新加坡2
+      - 🇸🇬 联通中转新加坡3
       - 🇯🇵 联通中转日本
       - 🇯🇵 联通中转日本2
       - 🇯🇵 联通中转日本3
-      - 🇺🇲 联通中转美国
-      - 🇺🇲 联通中转美国2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 🇯🇵 v2电信专线转日本
+      - 🇺🇸 v2电信专线转美国
+      - 🇰🇷 v2电信专线转韩国
       - 🇭🇰 v2电信专线转香港
-      - 🇭🇰 v2电信专线转香港2
       - 🇨🇳 V2移动中转台湾
+      - 🇨🇳 V2移动中转台湾2
       - 🇸🇬 v2移动中转新加坡
       - 🇸🇬 v2移动中转新加坡2
       - 🇸🇬 v2移动中转新加坡3
       - 🇯🇵 v2移动中转日本
       - 🇯🇵 v2移动中转日本2
       - 🇯🇵 v2移动中转日本3
-      - 🇯🇵 v2移动中转日本4
       - 🇰🇷 v2移动中转韩国
       - 🇰🇷 v2移动中转韩国2
+      - 🇰🇷 v2移动中转韩国3
       - 🇭🇰 v2移动中转香港
       - 🇭🇰 v2移动中转香港2
       - 🇭🇰 v2移动中转香港3
       - 🇭🇰 v2移动中转香港4
-      - 🇭🇰 v2移动中转香港5
       - 🇷🇺 v2联通中转俄罗斯
       - 🇷🇺 v2联通中转俄罗斯2
       - 🇷🇺 v2联通中转俄罗斯3
       - 🇯🇵 v2联通中转日本
-      - 🇺🇲 v2联通中转美国
-      - 🇺🇲 v2联通中转美国2
+      - 🇺🇸 v2联通中转美国
+      - 🇺🇸 v2联通中转美国2
       - 普通试用节点线路
       - 🇷🇺 移动中转俄罗斯
       - 🇷🇺 移动中转俄罗斯2
       - 🇷🇺 移动中转俄罗斯3
-      - 🇸🇬 移动中转新加坡
-      - 🇸🇬 移动中转新加坡2
-      - 🇸🇬 移动中转新加坡3
-      - 🇺🇲 移动中转美国
-      - 🇺🇲 移动中转美国2
+      - 🇺🇸 移动中转美国
+      - 🇺🇸 移动中转美国2
+      - 🇺🇸 移动中转美国3
+      - 🇺🇸 移动中转美国4
+      - 🇸🇬 联通中转新加坡
+      - 🇸🇬 联通中转新加坡2
+      - 🇸🇬 联通中转新加坡3
       - 🇯🇵 联通中转日本
       - 🇯🇵 联通中转日本2
       - 🇯🇵 联通中转日本3
-      - 🇺🇲 联通中转美国
-      - 🇺🇲 联通中转美国2
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 🇯🇵 v2电信专线转日本
+      - 🇺🇸 v2电信专线转美国
+      - 🇰🇷 v2电信专线转韩国
       - 🇭🇰 v2电信专线转香港
-      - 🇭🇰 v2电信专线转香港2
       - 🇨🇳 V2移动中转台湾
+      - 🇨🇳 V2移动中转台湾2
       - 🇸🇬 v2移动中转新加坡
       - 🇸🇬 v2移动中转新加坡2
       - 🇸🇬 v2移动中转新加坡3
       - 🇯🇵 v2移动中转日本
       - 🇯🇵 v2移动中转日本2
       - 🇯🇵 v2移动中转日本3
-      - 🇯🇵 v2移动中转日本4
       - 🇰🇷 v2移动中转韩国
       - 🇰🇷 v2移动中转韩国2
+      - 🇰🇷 v2移动中转韩国3
       - 🇭🇰 v2移动中转香港
       - 🇭🇰 v2移动中转香港2
       - 🇭🇰 v2移动中转香港3
       - 🇭🇰 v2移动中转香港4
-      - 🇭🇰 v2移动中转香港5
       - 🇷🇺 v2联通中转俄罗斯
       - 🇷🇺 v2联通中转俄罗斯2
       - 🇷🇺 v2联通中转俄罗斯3
       - 🇯🇵 v2联通中转日本
-      - 🇺🇲 v2联通中转美国
-      - 🇺🇲 v2联通中转美国2
+      - 🇺🇸 v2联通中转美国
+      - 🇺🇸 v2联通中转美国2
       - 普通试用节点线路
       - 🇷🇺 移动中转俄罗斯
       - 🇷🇺 移动中转俄罗斯2
       - 🇷🇺 移动中转俄罗斯3
-      - 🇸🇬 移动中转新加坡
-      - 🇸🇬 移动中转新加坡2
-      - 🇸🇬 移动中转新加坡3
-      - 🇺🇲 移动中转美国
-      - 🇺🇲 移动中转美国2
+      - 🇺🇸 移动中转美国
+      - 🇺🇸 移动中转美国2
+      - 🇺🇸 移动中转美国3
+      - 🇺🇸 移动中转美国4
+      - 🇸🇬 联通中转新加坡
+      - 🇸🇬 联通中转新加坡2
+      - 🇸🇬 联通中转新加坡3
       - 🇯🇵 联通中转日本
       - 🇯🇵 联通中转日本2
       - 🇯🇵 联通中转日本3
-      - 🇺🇲 联通中转美国
-      - 🇺🇲 联通中转美国2
   - name: 🔮 负载均衡
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 🇯🇵 v2电信专线转日本
+      - 🇺🇸 v2电信专线转美国
+      - 🇰🇷 v2电信专线转韩国
       - 🇭🇰 v2电信专线转香港
-      - 🇭🇰 v2电信专线转香港2
       - 🇨🇳 V2移动中转台湾
+      - 🇨🇳 V2移动中转台湾2
       - 🇸🇬 v2移动中转新加坡
       - 🇸🇬 v2移动中转新加坡2
       - 🇸🇬 v2移动中转新加坡3
       - 🇯🇵 v2移动中转日本
       - 🇯🇵 v2移动中转日本2
       - 🇯🇵 v2移动中转日本3
-      - 🇯🇵 v2移动中转日本4
       - 🇰🇷 v2移动中转韩国
       - 🇰🇷 v2移动中转韩国2
+      - 🇰🇷 v2移动中转韩国3
       - 🇭🇰 v2移动中转香港
       - 🇭🇰 v2移动中转香港2
       - 🇭🇰 v2移动中转香港3
       - 🇭🇰 v2移动中转香港4
-      - 🇭🇰 v2移动中转香港5
       - 🇷🇺 v2联通中转俄罗斯
       - 🇷🇺 v2联通中转俄罗斯2
       - 🇷🇺 v2联通中转俄罗斯3
       - 🇯🇵 v2联通中转日本
-      - 🇺🇲 v2联通中转美国
-      - 🇺🇲 v2联通中转美国2
+      - 🇺🇸 v2联通中转美国
+      - 🇺🇸 v2联通中转美国2
       - 普通试用节点线路
       - 🇷🇺 移动中转俄罗斯
       - 🇷🇺 移动中转俄罗斯2
       - 🇷🇺 移动中转俄罗斯3
-      - 🇸🇬 移动中转新加坡
-      - 🇸🇬 移动中转新加坡2
-      - 🇸🇬 移动中转新加坡3
-      - 🇺🇲 移动中转美国
-      - 🇺🇲 移动中转美国2
+      - 🇺🇸 移动中转美国
+      - 🇺🇸 移动中转美国2
+      - 🇺🇸 移动中转美国3
+      - 🇺🇸 移动中转美国4
+      - 🇸🇬 联通中转新加坡
+      - 🇸🇬 联通中转新加坡2
+      - 🇸🇬 联通中转新加坡3
       - 🇯🇵 联通中转日本
       - 🇯🇵 联通中转日本2
       - 🇯🇵 联通中转日本3
-      - 🇺🇲 联通中转美国
-      - 🇺🇲 联通中转美国2
   - name: 📲 电报消息
     type: select
     proxies:
@@ -922,6 +294,15 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
+  - name: 🌏 出海媒体
     type: select
     proxies:
       - DIRECT
@@ -1019,21 +400,19 @@ proxy-groups:
     interval: 300
     proxies:
       - 🇭🇰 v2电信专线转香港
-      - 🇭🇰 v2电信专线转香港2
       - 🇭🇰 v2移动中转香港
       - 🇭🇰 v2移动中转香港2
       - 🇭🇰 v2移动中转香港3
       - 🇭🇰 v2移动中转香港4
-      - 🇭🇰 v2移动中转香港5
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 🇯🇵 v2电信专线转日本
       - 🇯🇵 v2移动中转日本
       - 🇯🇵 v2移动中转日本2
       - 🇯🇵 v2移动中转日本3
-      - 🇯🇵 v2移动中转日本4
       - 🇯🇵 v2联通中转日本
       - 🇯🇵 联通中转日本
       - 🇯🇵 联通中转日本2
@@ -1043,18 +422,20 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇲 v2联通中转美国
-      - 🇺🇲 v2联通中转美国2
-      - 🇺🇲 移动中转美国
-      - 🇺🇲 移动中转美国2
-      - 🇺🇲 联通中转美国
-      - 🇺🇲 联通中转美国2
+      - 🇺🇸 v2电信专线转美国
+      - 🇺🇸 v2联通中转美国
+      - 🇺🇸 v2联通中转美国2
+      - 🇺🇸 移动中转美国
+      - 🇺🇸 移动中转美国2
+      - 🇺🇸 移动中转美国3
+      - 🇺🇸 移动中转美国4
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 🇨🇳 V2移动中转台湾
+      - 🇨🇳 V2移动中转台湾2
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1063,16 +444,18 @@ proxy-groups:
       - 🇸🇬 v2移动中转新加坡
       - 🇸🇬 v2移动中转新加坡2
       - 🇸🇬 v2移动中转新加坡3
-      - 🇸🇬 移动中转新加坡
-      - 🇸🇬 移动中转新加坡2
-      - 🇸🇬 移动中转新加坡3
+      - 🇸🇬 联通中转新加坡
+      - 🇸🇬 联通中转新加坡2
+      - 🇸🇬 联通中转新加坡3
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 🇰🇷 v2电信专线转韩国
       - 🇰🇷 v2移动中转韩国
       - 🇰🇷 v2移动中转韩国2
+      - 🇰🇷 v2移动中转韩国3
   - name: 🎥 奈飞节点
     type: select
     proxies:
@@ -2460,7 +1843,6 @@ rules:
  - DOMAIN-SUFFIX,onepush.query.yahoo.com,🍃 应用净化
  - DOMAIN-SUFFIX,p3p.yahoo.com,🍃 应用净化
  - DOMAIN-SUFFIX,partnerads.ysm.yahoo.com,🍃 应用净化
- - DOMAIN-SUFFIX,uservoice.com,🍃 应用净化
  - DOMAIN-SUFFIX,ws.progrss.yahoo.com,🍃 应用净化
  - DOMAIN-SUFFIX,yads.yahoo.co.jp,🍃 应用净化
  - DOMAIN-SUFFIX,ybp.yahoo.com,🍃 应用净化
@@ -2737,7 +2119,6 @@ rules:
  - DOMAIN-SUFFIX,dw.xcar.com.cn,🍃 应用净化
  - DOMAIN-SUFFIX,e.nexac.com,🍃 应用净化
  - DOMAIN-SUFFIX,eq.10jqka.com.cn,🍃 应用净化
- - DOMAIN-SUFFIX,erebor.douban.com,🍃 应用净化
  - DOMAIN-SUFFIX,exp.17wo.cn,🍃 应用净化
  - DOMAIN-SUFFIX,fund.10jqka.com.cn,🍃 应用净化
  - DOMAIN-SUFFIX,game.51yund.com,🍃 应用净化
@@ -3026,9 +2407,9 @@ rules:
  - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
  - DOMAIN-KEYWORD,qiyi,🌏 国内媒体
  - DOMAIN-SUFFIX,qy.net,🌏 国内媒体
- - IP-CIDR,101.224.0.0/13,🌏 国内媒体,no-resolve
- - IP-CIDR,101.227.0.0/16,🌏 国内媒体,no-resolve
- - IP-CIDR,119.176.0.0/12,🌏 国内媒体,no-resolve
+ - IP-CIDR,101.224.0.0/13,🌏 国内媒体
+ - IP-CIDR,101.227.0.0/16,🌏 国内媒体
+ - IP-CIDR,119.176.0.0/12,🌏 国内媒体
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
@@ -3270,11 +2651,26 @@ rules:
  - DOMAIN-SUFFIX,youtu.be,🌍 国外媒体
  - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
  - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
+ - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 出海媒体
+ - DOMAIN-SUFFIX,acgvideo.com,🌏 出海媒体
+ - DOMAIN-SUFFIX,bilibili.com,🌏 出海媒体
+ - IP-CIDR,45.43.32.234/32,🌏 出海媒体
+ - IP-CIDR,119.29.29.29/32,🌏 出海媒体
+ - IP-CIDR,128.1.62.200/32,🌏 出海媒体
+ - IP-CIDR,128.1.62.201/32,🌏 出海媒体
+ - IP-CIDR,150.116.92.250/32,🌏 出海媒体
+ - IP-CIDR,164.52.76.18/32,🌏 出海媒体
+ - IP-CIDR,203.107.1.33/32,🌏 出海媒体
+ - IP-CIDR,203.107.1.34/32,🌏 出海媒体
+ - IP-CIDR,203.107.1.65/32,🌏 出海媒体
+ - IP-CIDR,203.107.1.66/32,🌏 出海媒体
+ - DOMAIN,cache.video.iqiyi.com,🌏 出海媒体
  - DOMAIN-SUFFIX,1password.com,🚀 节点选择
  - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
  - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
  - DOMAIN-SUFFIX,cccat.io,🚀 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
+ - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
  - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
  - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
  - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
@@ -7303,7 +6699,6 @@ rules:
  - DOMAIN-SUFFIX,servehttp.com,🚀 节点选择
  - DOMAIN-SUFFIX,serveuser.com,🚀 节点选择
  - DOMAIN-SUFFIX,serveusers.com,🚀 节点选择
- - DOMAIN-SUFFIX,services.googleapis.cn,🚀 节点选择
  - DOMAIN-SUFFIX,sesawe.net,🚀 节点选择
  - DOMAIN-SUFFIX,sesawe.org,🚀 节点选择
  - DOMAIN-SUFFIX,sethwklein.net,🚀 节点选择
@@ -9819,3 +9214,12 @@ rules:
  - DOMAIN-KEYWORD,aria2,🎯 全球直连
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
+
+#
+#dns:
+#   enable: false
+#   enhanced-mode: redir-host # 或 fake-ip
+#   listen: 0.0.0.0:53
+#   nameserver:
+#      - 8.8.8.8
+# interface-name: WLAN # 物理网卡名称
